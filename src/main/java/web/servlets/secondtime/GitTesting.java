@@ -8,4 +8,7 @@ public class GitTesting {
 
         this.b = b;
     }
+    void print(int a){
+        System.out.println("функция парента " + a);
+    }
 }

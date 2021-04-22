@@ -9,8 +9,8 @@ public class NewClass extends GitTesting{
         super(b);
     }
 
-    static void print(){
-        System.out.println("статическая функция");
+    void print(int a){
+        System.out.println("функция потомка " + a);
     }
     static {
       System.out.println("статический контекст");
@@ -26,6 +26,7 @@ public class NewClass extends GitTesting{
 
 
 
+
     public static void main(String[] args) {
         System.out.println("мэйн");
         System.out.println("___________начало создания объекта_________");
@@ -33,8 +34,13 @@ public class NewClass extends GitTesting{
         System.out.println("___________конец создания объекта_________");
         GitTesting parent = child;
         System.out.println("______приколы с наследованием_________");
-        System.out.println("child.a = "+ child.a);
-        System.out.println("parent.a (parent = child) = " + parent.a + " ссылается все равно на парентовские поля, хоть по ссылке потомок");
+        System.out.println("переменная предка а = 2");
+        System.out.println("переменная потомка а = 12");
+        System.out.println("NewClass child = new NewClass(false)\nchild.a = "+ child.a);
+        System.out.println("parent.a (GitTesting parent = child) = " + parent.a + "\n ссылается все равно на поля предка, хоть по ссылке потомок");
+        System.out.print("parent.print(parent.a) (GitTesting parent = child) = " );
+        parent.print(parent.a);System.out.print("вызывается функция потомка с аргументом предка\n");
+        System.out.println("______приколы с наследованием_________");
         //NewClass git = null;
 
   }
