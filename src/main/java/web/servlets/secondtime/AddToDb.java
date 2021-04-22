@@ -63,5 +63,5 @@ private static final String PASSWORD = "postgres";
             //ВАРИК АДРЕСАЦИИ НА СТАТИКУ
             resp.sendRedirect("bam");//причем имя пишется!!! как просто URI
         }
-    }
+}
 }
