@@ -14,7 +14,7 @@ public class NewClass extends GitTesting{
         System.out.println(++i + --i);//1 + 0
         System.out.println(++i + i--);//1 + 1
         System.out.println("two"+1/2+(11+1)+"one");
-        System.out.println("конец пустого блока без имени!");
+        System.out.println("конец пустого блока без имени!!");
     }
 
     public NewClass(int a, boolean b) {
