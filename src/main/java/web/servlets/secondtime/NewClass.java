@@ -3,6 +3,12 @@ package web.servlets.secondtime;
 public class NewClass extends GitTesting{
 
     int i=0;
+    int a=12;
+
+    public NewClass(boolean b) {
+        super(b);
+    }
+
     static void print(){
         System.out.println("статическая функция");
     }
@@ -17,15 +23,18 @@ public class NewClass extends GitTesting{
         System.out.println("конец пустого блока без имени!!");
     }
 
-    public NewClass(int a, boolean b) {
-        super(a, b);
-    }
+
+
 
     public static void main(String[] args) {
         System.out.println("мэйн");
         System.out.println("___________начало создания объекта_________");
-        new NewClass(1,false);
+        NewClass child = new NewClass(false);
         System.out.println("___________конец создания объекта_________");
+        GitTesting parent = child;
+        System.out.println("______приколы с наследованием_________");
+        System.out.println("child.a = "+ child.a);
+        System.out.println("parent.a (parent = child) = " + parent.a + " ссылается все равно на парентовские поля, хоть по ссылке потомок");
         //NewClass git = null;
 
   }

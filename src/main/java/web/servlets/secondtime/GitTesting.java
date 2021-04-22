@@ -1,11 +1,11 @@
 package web.servlets.secondtime;
 
 public class GitTesting {
-    int a;
+    int a=2;
     boolean b;
 
-    public GitTesting(int a, boolean b) {
-        this.a = a;
+    public GitTesting(boolean b) {
+
         this.b = b;
     }
 }
