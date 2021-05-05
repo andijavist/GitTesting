@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: javafx.fxmlEmpty]
+Main-Class: ru.specialist.java.fx.view.AuthorsTable
+

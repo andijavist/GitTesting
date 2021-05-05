@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.specialist.java.fx.controller.InputAuthorController"
+            alignment="CENTER" spacing="10">
+    <GridPane alignment="CENTER" vgap="10" hgap="10">
+        <Label styleClass="big-label" GridPane.rowIndex="0" GridPane.columnIndex="0">Name</Label>
+        <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Label GridPane.rowIndex="1" GridPane.columnIndex="0">Last Name</Label>
+        <TextField fx:id="lastNameField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    </GridPane>
+    <Button fx:id="submitButton" onAction="#submit">Submit</Button>
+<!--    <Button styleClass="big-label">Submit</Button>-->
+<!--    <Button>Submit</Button>-->
+</VBox>
