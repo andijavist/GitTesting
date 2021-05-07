@@ -1,0 +1,15 @@
+.root {
+    -fx-background-color: #ccccff
+}
+
+.label {
+    -fx-font-family: monospace
+}
+
+.big-label {
+    -fx-font-size: 20
+}
+
+#submitButton {
+    -fx-background-color: #220ef4
+}
